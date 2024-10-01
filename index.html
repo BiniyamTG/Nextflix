@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Movie App</title>
+  </head>
+  <body>
+    <header>
+
+      <form id="form">
+        <input type="text" id="search" class="search" placeholder="Search">
+      </form>
+
+        <nav class="mobile-nav">
+          <div class="hamburger-menu" onclick="toggleNav()">&#9776;</div>
+          <div class="nav-links">
+            <div class="genre-container">
+              <button class="genre-btn" data-genre="28">Action</button>
+              <button class="genre-btn" data-genre="35">Comedy</button>
+              <button class="genre-btn" data-genre="18">Drama</button>
+              <button class="genre-btn" data-genre="27">Horror</button>
+              <button class="genre-btn" data-genre="878">Sci-Fi</button>
+            </div>
+          </div>
+        </nav>
+  
+      
+      
+    </header>
+
+    <main id="main"></main>
+    <button id="load-more" class="load-more-btn">Load More</button>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="social-container">
+        <a href="https://github.com/BiniyamTG" class="social-icon github" target="_blank">
+          <img src="github.png" alt="GitHub">
+        </a>
+        <a href="www.linkedin.com/in/biniyam-teketel-b95844254" class="social-icon linkedin" target="_blank">
+          <img src="linkedin-logo.png" alt="LinkedIn">
+        </a>
+        <a href="https://t.me/eftalhom" class="social-icon telegram" target="_blank">
+          <img src="telegram.png" alt="Telegram">
+        </a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+      function toggleNav() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('show');
+      }
+    </script>
+    
+    
+
+  </body>
+</html>
